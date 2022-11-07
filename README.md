@@ -9,3 +9,5 @@ Built with Javascript, EJS, and has express as template handler while using mong
 
 
 All responses are anonymous and logged into a database, which is viewed by teacher and counselor(s)
+
+Application wil use standard deviation to alert teacher to deviation of student normal mood or behavior. 
