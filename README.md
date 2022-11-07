@@ -3,7 +3,7 @@
 
 
 Full-stack application to prevent and intervene in classroom and cyber bullying in concerns to bullying in all shapes and forms.
-This app focuses more on a consultation modelto mediate instances of bullying in the classroom, as opposed to a punishment-enforced model. 
+This app focuses more on a consultation model to mediate instances of bullying in the classroom, as opposed to a punishment-enforced model. 
 
 Built with Javascript, EJS, and has express as template handler while using mongoDB as database.
 
