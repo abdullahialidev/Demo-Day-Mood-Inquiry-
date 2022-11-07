@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Mood Inquiry</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>How do you feel today? Enter your mood below?</h1>
+  <div class="row">
+
+    <form action="/saveMoodInfo" method="post">
+        <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+            <label>Today's Date</label>
+            <input type="text" class="form-control" name="date">
+        </div>
+        <div class="form-group">
+            <label>Grade on Daily Quiz</label>
+            <input type="text" class="form-control" name="grades">
+        </div>
+        <div class="form-group">
+            <label>What is your mood today from a scale of 1-10? :)</label>
+            <input type="text" class="form-control" name="moodscore">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+    </form>
+
+  <ul class="mood">
+  <% for(var i=0; i<moodCollector.length; i++) {%>
+    <li class="moodArray">
+      <span><%= moodCollector[i].name %></span>
+      <span><%= moodCollector[i].date %></span>
+      <span><%= moodCollector[i].grades %></span> 
+      <span><%= moodCollector[i].moodscore %></span>
+      <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
+
+
+
+
