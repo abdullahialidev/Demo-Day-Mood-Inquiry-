@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 
 app.post("/saveMoodInfo", (req, res) => {
   db.collection("Info").insertOne(
-    { studentName: req.body.name, currentDate: req.body.date, studentGrade: req.body.grades, moodscore: req.body.score},
+    { studentName: req.body.name, currentDate: req.body.date, studentGrade: req.body.grades, moodscore: req.body.moodscore},
     (err, result) => {
       if (err) return console.log(err);
       console.log("saved to database");
@@ -48,7 +48,7 @@ app.post("/saveMoodInfo", (req, res) => {
 });
 app.delete("/delete", (req, res) => {
   db.collection("Info").findOneAndDelete(
-    { studentName: req.body.name, currentDate: req.body.date, studentGrade: req.body.grades, moodscore: req.body.score},
+    { studentName: req.body.name, currentDate: req.body.date, studentGrade: req.body.grades, moodscore: req.body.moodscore},
     (err, result) => {
       if (err) return res.send(500, err);
       res.send("Message deleted!");
