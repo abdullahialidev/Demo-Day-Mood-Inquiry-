@@ -12,3 +12,14 @@ All responses are anonymous and logged into a database, which is viewed by teach
 
 Application wil use standard deviation to alert teacher to deviation of student normal mood or behavior, with a built in function that also accounts for
 student grade on daily quizzes taken before the mood inquiry
+
+ ## Installation
+
+1. Clone repo
+2. run `npm install`
+
+
+
+ To start server, npm start
+ 
+ The server is connected to port 8900
