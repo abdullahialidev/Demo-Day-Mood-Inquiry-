@@ -5,7 +5,7 @@
 Full-stack application to prevent and intervene in classroom and cyber bullying in concerns to bullying in all shapes and forms.
 This app focuses more on a consultation model to mediate instances of bullying in the classroom, as opposed to a punishment-enforced model. 
 
-Built with Javascript, EJS, and has express as template handler while using mongoDB as database.
+Built with Javascript, HTML, and CSS while utilizing express as a template handler and MongoDB as a database.
 
 
 All responses are anonymous and logged into a database, which is viewed by teacher and counselor(s)
